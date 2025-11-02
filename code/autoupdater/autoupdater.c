@@ -76,7 +76,8 @@ static int sha256_hash_index = 0;
 #elif defined(__x86_64__)
 #define AUTOUPDATE_ARCH "x86_64"
 #else
-#error Please define your platform.
+#define AUTOUPDATE_ARCH "unknown"
+#warning Unknown latform.
 #endif
 
 #define AUTOUPDATE_URL AUTOUPDATE_BASEURL "/" AUTOUPDATE_PACKAGE "/" AUTOUPDATE_PLATFORM "/" AUTOUPDATE_ARCH "/"
